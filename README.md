@@ -1,8 +1,10 @@
 # Linked List Data Structure Simulator
 This small project is for demonstrating how a linked list works.
+
 The program is written in C++ programming language using Qt.
 
 --Note--:
+
 To open and compile the source code:
  1. Make sure you have installed Visual Studio 2013
  
