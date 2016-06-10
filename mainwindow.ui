@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Singly Linked List Simulator</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuList">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menuMode">
+    <property name="title">
+     <string>Mode</string>
+    </property>
+    <addaction name="actionRun_Once"/>
+    <addaction name="actionRun_Step_By_Step"/>
+   </widget>
+   <addaction name="menuList"/>
+   <addaction name="menuMode"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionFind"/>
+   <addaction name="actionEdit_A_Node"/>
+   <addaction name="actionTraverse"/>
+   <addaction name="actionRandom_List"/>
+   <addaction name="actionInsert_Head"/>
+   <addaction name="actionAppend"/>
+   <addaction name="actionInsert_Before_A_Node"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNext"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="myres.qrc">
+     <normaloff>:/icons/new.ico</normaloff>:/icons/new.ico</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="myres.qrc">
+     <normaloff>:/icons/open.ico</normaloff>:/icons/open.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="myres.qrc">
+     <normaloff>:/icons/save.ico</normaloff>:/icons/save.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionAppend">
+   <property name="text">
+    <string>Append</string>
+   </property>
+   <property name="toolTip">
+    <string>Insert an integer to end of the list</string>
+   </property>
+   <property name="whatsThis">
+    <string>Insert a new node</string>
+   </property>
+  </action>
+  <action name="actionInsert_Head">
+   <property name="text">
+    <string>Insert Head</string>
+   </property>
+   <property name="toolTip">
+    <string>Insert an integer to head of the list</string>
+   </property>
+  </action>
+  <action name="actionNext">
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </action>
+  <action name="actionTraverse">
+   <property name="text">
+    <string>Traverse</string>
+   </property>
+   <property name="toolTip">
+    <string>Traverse the list and show result</string>
+   </property>
+  </action>
+  <action name="actionInsert_Before_A_Node">
+   <property name="text">
+    <string>Insert Before A Node</string>
+   </property>
+   <property name="toolTip">
+    <string>Insert an integer before a specific node</string>
+   </property>
+  </action>
+  <action name="actionFind">
+   <property name="text">
+    <string>Find</string>
+   </property>
+   <property name="toolTip">
+    <string>Find an integer in the list</string>
+   </property>
+  </action>
+  <action name="actionRandom_List">
+   <property name="text">
+    <string>Random List</string>
+   </property>
+   <property name="toolTip">
+    <string>Random a list</string>
+   </property>
+  </action>
+  <action name="actionRun_Once">
+   <property name="text">
+    <string>Run Once</string>
+   </property>
+  </action>
+  <action name="actionRun_Step_By_Step">
+   <property name="text">
+    <string>Run Step By Step</string>
+   </property>
+  </action>
+  <action name="actionEdit_A_Node">
+   <property name="text">
+    <string>Edit A Node</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="myres.qrc"/>
+ </resources>
+ <connections/>
+</ui>
